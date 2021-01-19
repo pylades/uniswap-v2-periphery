@@ -1,7 +1,7 @@
 pragma solidity =0.6.6;
 
-import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesFactory.sol';
-import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesPair.sol';
+import '@pyladesprotocol/core/contracts/interfaces/IPyladesFactory.sol';
+import '@pyladesprotocol/core/contracts/interfaces/IPyladesPair.sol';
 import '@pyladesprotocol/lib/contracts/libraries/FixedPoint.sol';
 
 import '../libraries/PyladesOracleLibrary.sol';

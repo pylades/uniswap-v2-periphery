@@ -1,6 +1,6 @@
 pragma solidity =0.6.6;
 
-import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesFactory.sol';
+import '@pyladesprotocol/core/contracts/interfaces/IPyladesFactory.sol';
 import '@pyladesprotocol/lib/contracts/libraries/TransferHelper.sol';
 
 import './interfaces/IPyladesRouter02.sol';

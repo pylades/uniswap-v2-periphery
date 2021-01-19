@@ -1,6 +1,6 @@
 {
   "name": "@pyladesprotocol/periphery",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "author": "Andreas Bigger",
   "description": "💂 Peripheral smart contracts for interacting with Pylades",
   "engines": {
@@ -16,8 +16,8 @@
     "contracts"
   ],
   "dependencies": {
-    "@pyladesprotocol/lib": "4.0.1-alpha",
-    "@pyladesprotocol/v2-core": "1.0.0"
+    "@pyladesprotocol/core": "^1.0.0",
+    "@pyladesprotocol/lib": "^1.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",

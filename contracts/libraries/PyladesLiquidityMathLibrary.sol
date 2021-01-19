@@ -1,7 +1,7 @@
 pragma solidity >=0.5.0;
 
-import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesPair.sol';
-import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesFactory.sol';
+import '@pyladesprotocol/core/contracts/interfaces/IPyladesPair.sol';
+import '@pyladesprotocol/core/contracts/interfaces/IPyladesFactory.sol';
 import '@pyladesprotocol/lib/contracts/libraries/Babylonian.sol';
 import '@pyladesprotocol/lib/contracts/libraries/FullMath.sol';
 
