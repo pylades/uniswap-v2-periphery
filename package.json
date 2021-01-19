@@ -1,14 +1,14 @@
 {
-  "name": "@pylades/v2-periphery",
+  "name": "@pylades/periphery",
   "version": "1.1.0-beta.0",
-  "description": "🎚 Peripheral smart contracts for interacting with pylades V2",
+  "description": "💂 Peripheral smart contracts for interacting with Pylades",
   "engines": {
     "node": ">=10"
   },
   "homepage": "https://pylades.finance",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pylades/uniswap-v2-periphery"
+    "url": "https://github.com/pylades/pylades-periphery"
   },
   "files": [
     "build",

@@ -1,6 +1,6 @@
 pragma solidity =0.6.6;
 
-import '../libraries/UniswapV2LiquidityMathLibrary.sol';
+import '../libraries/PyladesLiquidityMathLibrary.sol';
 
 contract ExampleComputeLiquidityValue {
     using SafeMath for uint256;
@@ -11,58 +11,49 @@ contract ExampleComputeLiquidityValue {
         factory = factory_;
     }
 
-    // see UniswapV2LiquidityMathLibrary#getReservesAfterArbitrage
+    // see PyladesLiquidityMathLibrary#getReservesAfterArbitrage
     function getReservesAfterArbitrage(
         address tokenA,
         address tokenB,
         uint256 truePriceTokenA,
         uint256 truePriceTokenB
     ) external view returns (uint256 reserveA, uint256 reserveB) {
-        return UniswapV2LiquidityMathLibrary.getReservesAfterArbitrage(
-            factory,
-            tokenA,
-            tokenB,
-            truePriceTokenA,
-            truePriceTokenB
-        );
+        return
+            PyladesLiquidityMathLibrary.getReservesAfterArbitrage(
+                factory,
+                tokenA,
+                tokenB,
+                truePriceTokenA,
+                truePriceTokenB
+            );
     }
 
-    // see UniswapV2LiquidityMathLibrary#getLiquidityValue
+    // see PyladesLiquidityMathLibrary#getLiquidityValue
     function getLiquidityValue(
         address tokenA,
         address tokenB,
         uint256 liquidityAmount
-    ) external view returns (
-        uint256 tokenAAmount,
-        uint256 tokenBAmount
-    ) {
-        return UniswapV2LiquidityMathLibrary.getLiquidityValue(
-            factory,
-            tokenA,
-            tokenB,
-            liquidityAmount
-        );
+    ) external view returns (uint256 tokenAAmount, uint256 tokenBAmount) {
+        return PyladesLiquidityMathLibrary.getLiquidityValue(factory, tokenA, tokenB, liquidityAmount);
     }
 
-    // see UniswapV2LiquidityMathLibrary#getLiquidityValueAfterArbitrageToPrice
+    // see PyladesLiquidityMathLibrary#getLiquidityValueAfterArbitrageToPrice
     function getLiquidityValueAfterArbitrageToPrice(
         address tokenA,
         address tokenB,
         uint256 truePriceTokenA,
         uint256 truePriceTokenB,
         uint256 liquidityAmount
-    ) external view returns (
-        uint256 tokenAAmount,
-        uint256 tokenBAmount
-    ) {
-        return UniswapV2LiquidityMathLibrary.getLiquidityValueAfterArbitrageToPrice(
-            factory,
-            tokenA,
-            tokenB,
-            truePriceTokenA,
-            truePriceTokenB,
-            liquidityAmount
-        );
+    ) external view returns (uint256 tokenAAmount, uint256 tokenBAmount) {
+        return
+            PyladesLiquidityMathLibrary.getLiquidityValueAfterArbitrageToPrice(
+                factory,
+                tokenA,
+                tokenB,
+                truePriceTokenA,
+                truePriceTokenB,
+                liquidityAmount
+            );
     }
 
     // test function to measure the gas cost of the above function
@@ -72,11 +63,9 @@ contract ExampleComputeLiquidityValue {
         uint256 truePriceTokenA,
         uint256 truePriceTokenB,
         uint256 liquidityAmount
-    ) external view returns (
-        uint256
-    ) {
-        uint gasBefore = gasleft();
-        UniswapV2LiquidityMathLibrary.getLiquidityValueAfterArbitrageToPrice(
+    ) external view returns (uint256) {
+        uint256 gasBefore = gasleft();
+        PyladesLiquidityMathLibrary.getLiquidityValueAfterArbitrageToPrice(
             factory,
             tokenA,
             tokenB,
@@ -84,7 +73,7 @@ contract ExampleComputeLiquidityValue {
             truePriceTokenB,
             liquidityAmount
         );
-        uint gasAfter = gasleft();
+        uint256 gasAfter = gasleft();
         return gasBefore - gasAfter;
     }
 }
