@@ -1,6 +1,6 @@
 pragma solidity =0.6.6;
 
-import '@pylades/v2-core/contracts/interfaces/IPyladesCallee.sol';
+import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesCallee.sol';
 
 import '../libraries/PyladesLibrary.sol';
 import '../interfaces/V1/IPyladesFactory.sol';

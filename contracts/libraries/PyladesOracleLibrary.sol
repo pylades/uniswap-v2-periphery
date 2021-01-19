@@ -1,7 +1,7 @@
 pragma solidity >=0.5.0;
 
-import '@pylades/v2-core/contracts/interfaces/IPyladesPair.sol';
-import '@pylades/lib/contracts/libraries/FixedPoint.sol';
+import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesPair.sol';
+import '@pyladesprotocol/lib/contracts/libraries/FixedPoint.sol';
 
 // library with helper methods for oracles that are concerned with computing average prices
 library PyladesOracleLibrary {

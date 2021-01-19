@@ -1,9 +1,9 @@
 pragma solidity >=0.5.0;
 
-import '@pylades/v2-core/contracts/interfaces/IPyladesPair.sol';
-import '@pylades/v2-core/contracts/interfaces/IPyladesFactory.sol';
-import '@pylades/lib/contracts/libraries/Babylonian.sol';
-import '@pylades/lib/contracts/libraries/FullMath.sol';
+import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesPair.sol';
+import '@pyladesprotocol/v2-core/contracts/interfaces/IPyladesFactory.sol';
+import '@pyladesprotocol/lib/contracts/libraries/Babylonian.sol';
+import '@pyladesprotocol/lib/contracts/libraries/FullMath.sol';
 
 import './SafeMath.sol';
 import './PyladesLibrary.sol';

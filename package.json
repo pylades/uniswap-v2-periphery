@@ -1,5 +1,5 @@
 {
-  "name": "@pylades/periphery",
+  "name": "@pyladesprotocol/periphery",
   "version": "1.1.0-beta.0",
   "description": "💂 Peripheral smart contracts for interacting with Pylades",
   "engines": {
@@ -15,8 +15,8 @@
     "contracts"
   ],
   "dependencies": {
-    "@pylades/lib": "4.0.1-alpha",
-    "@pylades/v2-core": "1.0.0"
+    "@pyladesprotocol/lib": "4.0.1-alpha",
+    "@pyladesprotocol/v2-core": "1.0.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.6",

@@ -4,8 +4,8 @@ import { deployContract } from 'ethereum-waffle'
 
 import { expandTo18Decimals } from './utilities'
 
-import PyladesFactory from '@pylades/core/build/PyladesFactory.json'
-import IPyladesPair from '@pylades/core/build/IPyladesPair.json'
+import PyladesFactory from '@pyladesprotocol/core/build/PyladesFactory.json'
+import IPyladesPair from '@pyladesprotocol/core/build/IPyladesPair.json'
 
 import ERC20 from '../../build/ERC20.json'
 import WETH9 from '../../build/WETH9.json'
